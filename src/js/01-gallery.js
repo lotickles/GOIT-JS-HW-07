@@ -18,7 +18,7 @@ galleryItems.forEach((item) => {
 });
 //event delegation
 gallery.addEventListener("click", (e) => {
-  console.log("is clicked", e);
+  // console.log("is clicked", e);
   if (e.target.tagName === "IMG") {
     let bigImage = e.target.getAttribute("data-source");
     let instance = basicLightbox.create(
